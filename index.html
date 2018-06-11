@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>I am</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="This is a tester site for PEEPEE">
+        <meta name="keywords" content="cool">
+        <meta name="author" content="Chair Hdolers">
+        <script src="./javascript/web3.min.js"></script>
+        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+        <!-- <script src="./node_modules/web3/dist/web3.min.js"></script> -->
+    </head>
+    <body>
+        <header id="stickyHeader">
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Projects</span></h1>
+                </div>
+                <!-- <img src="./img/purplogo.png"> -->
+                <div id="branding">
+                        <h1><span class="highlight">Picks</span></h1>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li class="current"></li>
+                        <li class="about"><a href="about.html">About</a></li>
+                        <li class="winners">info</a></li>
+                        <li><button type="submit" class="button_1">Buy</button></li>
+                        <li><button type="submit" class="button_3">Draw</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section id="showcase">
+        </section>
+        <section id="events">
+            <div class="container">
+                    
+                    <div id="random_number"></div>
+                    <div id="banner"></div>
+                </div>
+            <!-- </div> -->
+        </section>
+        <section id="information">
+            <div class="container">
+                <div class="information_header"><p>Bigger Title</p><div id="current_balance"></div></div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                    <div class="ll">
+                        <h3>Filler Title</h3>
+                        <p>Filler Text</p>
+                    </div>
+                    <div class="rr">
+                    </div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                        <div class="ll"></div>
+                        <div class="rr">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                        <div class="ll">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                        <div class="rr"></div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                        <div class="ll"></div>
+                        <div class="rr">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                    <div class="ll">
+                        <h3>Filler Title</h3>
+                        <p>Filler Text</p>
+                    </div>
+                    <div class="rr">
+                    </div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                        <div class="ll"></div>
+                        <div class="rr">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                </div>
+                <div class="accent_bar"></div>
+                <div class="row">
+                        <div class="ll">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                        <div class="rr"></div>
+                </div>
+                <div class="accent_bar"></div>
+                 <div class="row">
+                        <div class="ll"></div>
+                        <div class="rr">
+                            <h3>Filler Title</h3>
+                            <p>Filler Text</p>
+                        </div>
+                </div>
+                <div class="accent_bar"></div> 
+            </div>
+        </section>
+        <footer>
+            <p>I AM &copy; 2018</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+        <script>
+            var maxnum = 10;
+
+            window.onscroll = function() {myFunction()};
+
+            var header = document.getElementById("stickyHeader");
+            var sticky = header.offsetTop;
+
+            function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+            }
+
+            console.log("Winky hello");
+            if (typeof web3 != 'undefined') {
+                web3 = new Web3(web3.currentProvider);
+            } else {
+                web3 = new Web3(web3.providers.HttpProvider("http://127.0.0.1:8545"));
+            }
+            web3.eth.defaultAccount = web3.eth.accounts[5];
+
+            // var Kindle = web3.eth.contract([{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"}],"name":"DuplicateRando","type":"event"},{"constant":false,"inputs":[{"name":"myid","type":"bytes32"},{"name":"result","type":"string"}],"name":"__callback","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_queryId","type":"bytes32"},{"name":"_result","type":"string"},{"name":"_proof","type":"bytes"}],"name":"__callback","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"clearMapping","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"begger","type":"uint256[3]"}],"name":"deliver","outputs":[{"name":"","type":"uint256[3]"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"delivery","outputs":[{"name":"","type":"uint256[3]"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"pickem","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"reset","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"kphrase","type":"string"},{"name":"flavor","type":"uint256"},{"name":"keyphrase","type":"string"}],"name":"season","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"}],"name":"Number","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"winner","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"AnnounceWinner","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"value","type":"uint256"}],"name":"PriceUpdated","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"}],"name":"NewBanner","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"hash","type":"bytes32"},{"indexed":false,"name":"text_one","type":"string"},{"indexed":false,"name":"text_two","type":"string"},{"indexed":false,"name":"num","type":"uint256"}],"name":"Reveal","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"count","type":"uint256"},{"indexed":false,"name":"addy","type":"address"}],"name":"GetNum","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"hash","type":"bytes32"}],"name":"SecretSet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"}],"name":"Randocamein","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"text","type":"string"},{"indexed":false,"name":"open","type":"bool"}],"name":"ArrayCleared","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"},{"indexed":false,"name":"text","type":"string"},{"indexed":false,"name":"caller","type":"address"}],"name":"Callbackcalled","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"addy","type":"address"},{"indexed":false,"name":"text","type":"string"},{"indexed":false,"name":"amount","type":"uint256"},{"indexed":false,"name":"counter","type":"uint256"}],"name":"PledgeMade","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"},{"indexed":false,"name":"text","type":"string"},{"indexed":false,"name":"addr","type":"address"}],"name":"Scriptfilled","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"addy","type":"address"}],"name":"Setcontract","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"num","type":"uint256"}],"name":"Arraycaught","type":"event"},{"constant":false,"inputs":[],"name":"setArray","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"text","type":"string"}],"name":"setBanner","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"Ca","type":"address"}],"name":"setcallercontract","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"num","type":"uint256"}],"name":"setFirst","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"oC","type":"address"}],"name":"setImport","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"secretshh","type":"bytes32"}],"name":"setshh","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"val","type":"uint256"}],"name":"setValue","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"update","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"addressArray","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"addressArrayCounter","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"banner","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"callercontract","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"caughtarray","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"clearMappingCounter","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"closed","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"found","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"index","type":"uint256"}],"name":"getaddresses","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"index","type":"uint256"}],"name":"getrandos","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"limit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"lips","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"nolips","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"otherContract","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"p","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pause","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pep","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pickemCounter","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pickeraddress","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pledgePrice","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"pop","outputs":[{"name":"","type":"bytes32"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"rando","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"randoarray","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"usedRando","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"vinners","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"}]);
+            // var Kindle = web3.eth.contract([{"constant":true,"inputs":[],"name":"precommitHash","outputs":[{"name":"","type":"bytes32"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"withHoldings","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"burnWallet","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"selectWinnersCounter","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"subconsciousContract","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage5","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":false,"inputs":[],"name":"selectWinners","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[],"name":"setArray","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[],"name":"withdraw","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"randomNumberArray","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage7","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"winnersMapping","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":true,"type":"function","stateMutability":"payable"},{"constant":false,"inputs":[],"name":"burn","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[{"name":"value","type":"uint256"}],"name":"setValue","outputs":[],"payable":true,"type":"function","stateMutability":"payable"},{"constant":true,"inputs":[],"name":"closeTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"banner","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"ticketCounter","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage3","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":false,"inputs":[{"name":"newAddress","type":"address"}],"name":"setImport","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":true,"inputs":[],"name":"maxTickets","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage2","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"openTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":false,"inputs":[{"name":"secretHash","type":"bytes32"}],"name":"submitSecretHash","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[],"name":"forceOkayForRandomNumbers","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"ticketArray","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage4","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage1","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":false,"inputs":[{"name":"keyPhraseOne","type":"string"},{"name":"hiddenNum","type":"uint256"},{"name":"keyPhraseTwo","type":"string"}],"name":"revealHash","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[{"name":"message","type":"string"}],"name":"editBanner","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":true,"inputs":[],"name":"maxPayout","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"saltNum","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"subconsciousAddress","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"stage6","outputs":[{"name":"","type":"bool"}],"payable":false,"type":"function","stateMutability":"view"},{"inputs":[],"payable":false,"type":"constructor","stateMutability":"nonpayable"},{"payable":true,"type":"fallback","stateMutability":"payable"},{"anonymous":false,"inputs":[{"indexed":false,"name":"addy","type":"address"}],"name":"SetSubconsciousContract","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"},{"indexed":false,"name":"secretHash","type":"bytes32"}],"name":"SecretHashSet","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"burned","type":"uint256"}],"name":"BonfireCoinBurn","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"txt","type":"string"}],"name":"BannerUpdated","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"value","type":"uint256"}],"name":"PriceUpdated","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"secretHash","type":"bytes32"},{"indexed":false,"name":"textOne","type":"string"},{"indexed":false,"name":"secretNum","type":"uint256"},{"indexed":false,"name":"textTwo","type":"string"}],"name":"SecretHashRevealed","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"seatsLeft","type":"uint256"}],"name":"PledgeMade","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"winner","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"WinnerSelected","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"withdrawTo","type":"address"},{"indexed":false,"name":"withdrawAmount","type":"uint256"}],"name":"Withdrawal","type":"event"}]);
+            var Kindle = web3.eth.contract([{"anonymous":false,"inputs":[{"indexed":false,"name":"value","type":"uint256"}],"name":"newBalance","type":"event"},{"constant":false,"inputs":[{"name":"_queryId","type":"bytes32"},{"name":"_result","type":"string"},{"name":"_proof","type":"bytes"}],"name":"__callback","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[{"name":"myid","type":"bytes32"},{"name":"result","type":"string"}],"name":"__callback","outputs":[],"payable":false,"type":"function","stateMutability":"nonpayable"},{"constant":false,"inputs":[],"name":"kill","outputs":[],"payable":true,"type":"function","stateMutability":"payable"},{"constant":false,"inputs":[],"name":"update","outputs":[],"payable":true,"type":"function","stateMutability":"payable"},{"anonymous":false,"inputs":[{"indexed":false,"name":"bs","type":"bytes32"}],"name":"number_bytes","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"bs","type":"bytes"}],"name":"newRandomNumber_bytes","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"num","type":"uint256"}],"name":"newRandomNumber_uint","type":"event"},{"payable":true,"type":"fallback","stateMutability":"payable"},{"inputs":[],"payable":false,"type":"constructor","stateMutability":"nonpayable"},{"constant":true,"inputs":[],"name":"bal","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"count","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"maxRange","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"players","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"price","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"randomNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"},{"constant":true,"inputs":[],"name":"updateCount","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function","stateMutability":"view"}]);
+            var kindle = Kindle.at('0xc56709ff935c208f80b815de6b03ec405c4256d5');
+            console.log(kindle);
+
+            $(".button_1, .button_2").click(function() {
+                web3.eth.sendTransaction({from:web3.eth.accounts[5], to:kindle.address, value:web3.toWei(1, "ether"), gas:2000000}, (err, res) => {
+                    if (err) {
+                        console.log(err);
+                    }
+                });
+
+            });
+/*******************Current Pledge Price**********************/
+            // kindle.price.call(function (err, result) { 
+            //     if (!err) {
+            //         $(".current").html("Current Pledge Price: " + (result / 1000000000000000000) + "ETH");
+            //         console.log(result);
+            //     }
+            // });
+
+            // var currentPrice = kindle.PriceUpdated();
+            // currentPrice.watch(function(error, result) {
+            //     if (!error) {
+            //         $(".current").html("Current Pledge Price: " + (result.args.value / 1000000000000000000) + "ETH");
+            //         console.log(result.args.counter);
+            //     } else {
+            //         console.log(error);
+            //         // $("#loader").hide();
+            //     }
+            // });
+/*******************Banner**********************/
+            kindle.price.call(function (err, result) { 
+                if (!err) {
+                    $("#banner").html("The best: " + result);
+                    console.log(result);
+                }
+            });
+
+            // var newBanner = kindle.BannerUpdated();
+            // newBanner.watch(function(error, result) {
+            //     if (!error) {
+            //         $("#banner").html(result.args.txt);
+            //         console.log(result);
+            //     } 
+            // });
+
+            ///////////////////WINNER EVENT///////////////
+            // var winnerAnnounced = kindle.WinnerSelected();
+            // winnerAnnounced.watch(function(error, result) {
+            //     if (!error) {
+            //         $("#banner").html("Congratulations, " + result.args.winner + " " +result.args.amount);
+            //         console.log(result);
+            //     } 
+            // });
+
+/*******************Number of seats left at the fire**********************/
+            kindle.bal.call(function (err, result) { 
+                if (!err) {
+                    $("#current_balance").html("Current Balance  " + (result / 1000000000000000000));
+                    console.log(result);
+                }
+            });
+
+            var balance = kindle.newBalance();
+            balance.watch(function(error, result) {
+                if (!error) {
+                    $("#current_balance").html("Current Balance  " + (result.args.value / 1000000000000000000));
+                    console.log(result.args.bal);
+                } else {
+                    console.log(error);
+                    // $("#loader").hide();
+                }
+            });
+
+/************************SALT HASH****************************/
+            kindle.randomNumber.call(function (err, result) { 
+                if (!err) {
+                    $("#random_number").html("The current random number: " + result);
+                    console.log(result);
+                }
+            });
+
+            var rando = kindle.newRandomNumber_uint();
+            rando.watch(function(error, result) {
+                if (!error) {
+                    console.log("random_number");
+                    $("#random_number").html("The Random Number is: " + result.args.num);
+                    console.log("The Random Number is: " + result.args.num);
+                } else {
+                    console.log(error);
+                    // $("#loader").hide();
+                }
+            });
+
+            // var revealhash = kindle.SecretHashRevealed();
+            // revealhash.watch(function(error, result) {
+            //     if (!error) {
+            //         console.log("random_number");
+            //         // $("#spacer").html(result.args.hash);
+            //         $("#random_number").html(result.args.secretHash + ": " + result.args.textOne + " " + result.args.secretNum + " " + result.args.textTwo); // txt hash num
+            //         console.log(result.args.secretHash + ": " + result.args.textOne + " " + result.args.secretNum + " " + result.args.textTwo);
+            //     } else {
+            //         console.log(error);
+            //         // $("#loader").hide();
+            //     }
+            // });
+
+
+        </script>
+    </body>
+</html>
+
+<!--                 <div class="box">
+                    <h3>Step 1</h3>
+                    <p>Step One is to buy in</p>
+                </div>
+                <div class="box">
+                    <img src="./img/purpdraw.png">
+                </div>
+                <div class="box">
+                        <img src="./img/purpsalty.png">
+                    </div>
+                <div class="box">
+                    <h3>Step 2</h3>
+                    <p>Step Two is Randys being gathered</p>
+                </div>
+                <div class="box">
+                    <h3>Step 3</h3>
+                    <p>Step Three is payout</p>
+                </div>
+                <div class="box">
+                        <img src="./img/purpburn.png">
+                </div> -->
